@@ -7,4 +7,5 @@ get-childitem C:\windows\temp -filter *.log -recurse | sort-object length -desce
 et kuvada ainult kolm suurimat faili:
 get-childitem C:\windows\temp -filter *.log -recurse | sort-object length -descending |select-object -first 3
 
-
+et panna oma nimi ja kursus:
+write-output "Käsu sooritas: Marii, kursus: IT24"
