@@ -1,0 +1,15 @@
+powershelli kirjutasin:
+new-item -path $profile -type file -force
+Get-ExecutionPolicy -List
+Set-ExecutionPolicy RemoteSigned -Scope LocalMachine -Force
+
+
+notepadi kirjutasin:
+Clear-Host
+Write-Host "`t**************Marii.Arjus**************"
+Write-Host "`t `t Powershell"
+Write-Host " "
+
+Set-Location C:\
+
+$host.ui.RawUI.WindowTitle = "Marii PowerShell"
