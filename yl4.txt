@@ -1,0 +1,10 @@
+et leida LOG kataloogid:
+get-childitem C:\windows\temp -filter *.log -recurse
+
+et saada suurus järgi kahanevalt:
+get-childitem C:\windows\temp -filter *.log -recurse | sort-object length -descending
+
+et kuvada ainult kolm suurimat faili:
+get-childitem C:\windows\temp -filter *.log -recurse | sort-object length -descending |select-object -first 3
+
+

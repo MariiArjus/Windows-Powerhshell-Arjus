@@ -1,0 +1,3 @@
+get-help get-process -online
+get-service | where-object { $_.Name -like "*network*" -or $_.displayname -like "*network*"}
+get-service | where-object { $_.Name -like "*network*" -or $_.displayname -like "*network*"} | format-table status, name -authorsize
