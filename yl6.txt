@@ -1,0 +1,4 @@
+$minuNimi = @("Marii Arjus")
+$gmail = "marii@hkhk.edu.ee"
+$tänane_kuupäev = get-date
+
